@@ -1,4 +1,6 @@
 language: haskell
-
+arch:
+ - amd64
+ - ppc64le
 script:
  - cabal configure --enable-tests --ghc-options=-Werror && cabal build && cabal test
